@@ -1,17 +1,22 @@
 // Card.js
 import React from 'react';
+// import { FaPlayCircle } from 'react-icons/fa'; // Import the Play Circle icon from react-icons/fa
 
 const Card = ({ image, title, time, tutor }) => {
   return (
-    <div className="border rounded-lg shadow-lg overflow-hidden p-4 d-flex justify-around">
+    <div className="border rounded-lg shadow-lg overflow-hidden p-4 flex justify-around items-center">
       <div className="w-full h-48 mb-4">
-        <img src={image} alt={title} className="w-full h-full object-contain " />
+        <img src={image} alt={title} className="w-full h-full object-cover rounded-lg" />
       </div>
-      <div clas=''>
-      <h3 className="text-xl font-semibold">{title}</h3>
-      <p className="text-gray-600">{time}</p>
-      <p className="text-gray-800 mt-2">Tutor: {tutor}</p>
-    </div>
+      <div className="flex-1 ml-4">
+        <div className="flex items-center">
+          {/* <FaPlayCircle className="text-green-500 w-6 h-6 mr-2" /> */}
+           {/* Icon for Live Session */}
+          <h3 className="text-xl font-semibold">{title}</h3>
+        </div>
+        <p className="text-gray-600">{time}</p>
+        <p className="text-gray-800 mt-2">Tutor: {tutor}</p>
+      </div>
     </div>
   );
 };

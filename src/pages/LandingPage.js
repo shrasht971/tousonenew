@@ -8,6 +8,8 @@ import img4 from '../assets/Poster.png';
 import img5 from '../assets/poster2.webp';
 import img6 from '../assets/poster3.jpg';
 import img7 from '../assets/poster4.jpg';
+import teacher3 from '../assets/teacher3.jpg';
+import teacher4 from '../assets/teacher4.jpg';
 import CarouselComponent from '../components/CarouselComponent';
 import UpcomingSession from '../components/upcoming';
 import OurTutors from '../components/OurTutor';
@@ -20,11 +22,11 @@ const currentLiveSessions = [
   { image: img1, title: 'Session 1', time: '9:00 AM - 10:00 AM', tutor: 'John Doe' },
   { image: img2, title: 'Session 2', time: '10:00 AM - 11:00 AM', tutor: 'Jane Smith' },
   { image: img3, title: 'Session 3', time: '11:00 AM - 12:00 PM', tutor: 'Alice Johnson' },
-  { image: img4, title: 'Session 4', time: '12:00 PM - 1:00 PM', tutor: 'Michael Brown' },
-  { image: img5, title: 'Session 5', time: '1:00 PM - 2:00 PM', tutor: 'John Doe' },
-  { image: img6, title: 'Session 6', time: '2:00 PM - 3:00 PM', tutor: 'Jane Smith' },
-  { image: img7, title: 'Session 7', time: '3:00 PM - 4:00 PM', tutor: 'Alice Johnson' },
-  { image: img4, title: 'Session 8', time: '4:00 PM - 5:00 PM', tutor: 'Michael Brown' },
+  { image: teacher3, title: 'Session 4', time: '12:00 PM - 1:00 PM', tutor: 'Michael Brown' },
+  { image: teacher4, title: 'Session 5', time: '1:00 PM - 2:00 PM', tutor: 'John Doe' },
+  { image: img1, title: 'Session 6', time: '2:00 PM - 3:00 PM', tutor: 'Jane Smith' },
+  { image: teacher4, title: 'Session 7', time: '3:00 PM - 4:00 PM', tutor: 'Alice Johnson' },
+  { image: teacher3, title: 'Session 8', time: '4:00 PM - 5:00 PM', tutor: 'Michael Brown' },
 ];
 const items = [
   { image: img4 ,detail: 'Detail 1' },
@@ -66,7 +68,7 @@ const LandingPage = () => {
 
       <section className="p-8">
         <h2 className="text-3xl mb-6">Current Live Sessions</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
           {currentLiveSessions.slice(0, 3).map((session, index) => (
             <Card
               key={index}
