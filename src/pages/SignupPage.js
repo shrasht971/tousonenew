@@ -126,13 +126,14 @@ const SignupPage = ({ }) => {
                     <div class="form-group d-flex ">
                       <button
                         type="submit"
-                        class="form-control btn btn-primary rounded  submit mx-4 px-3 "
+                        class="form-control btn btn-primary rounded  submit mx-4 sm:px-3  "
                       >
                         Create account
+                       
                       </button>
                       <button type="button" className="form-control btn btn-outline-primary rounded submit px-3 bg-sky-800 d-flex align-items-center justify-content-center">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google icon" className="mr-2 text-3xl font-bold " style={{ width: '15px' }} />
-                        <p class='text-xs font-normal mt-[9%]'> Sign-in with Google</p>
+                        <p class='text-xs sm:text-xs sm:font-light font-normal mt-[9%]'> Sign-in with Google</p>
                       </button>
                     <div>
               

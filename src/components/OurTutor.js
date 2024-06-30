@@ -32,7 +32,7 @@ const OurTutors = () => {
           <div key={i} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {tutors.slice(i * 4, i * 4 + 4).map((tutor, index) => (
               <div key={index} className="border rounded-lg shadow-lg overflow-hidden p-4">
-                <img src={tutor.image} alt={tutor.name} className="w-full h-48 object-fill mb-4" />
+                <img src={tutor.image} alt={tutor.name} className="w-full h-48 object-contain mb-4" />
                 <h3 className="text-xl font-semibold">{tutor.name}</h3>
                 <p className="text-gray-800 mt-2">{tutor.specialization}</p>
               </div>
