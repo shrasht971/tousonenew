@@ -78,7 +78,7 @@ const SignupPage = ({ }) => {
                         />
                       </div>
                       </div>
-                      <div class='flex '>
+                      <div class='flex mx-2'>
                       <div class="form-group mb-3">
                         <label class="" for="Password">
                           Password
@@ -122,22 +122,21 @@ const SignupPage = ({ }) => {
                       </div>
                       </div>
                     
-                    <div class=''>
-                    <div class="form-group d-flex justify-content-between ">
+                    
+                    <div class="form-group d-flex ">
                       <button
                         type="submit"
-                        class="form-control btn btn-primary rounded submit mx-4 px-3"
+                        class="form-control btn btn-primary rounded  submit mx-4 px-3"
                       >
                         Create account
                       </button>
-                    <div>
-                   <div className="form-group">
-                      <button type="button" className="form-control btn btn-outline-primary rounded submit px-3 d-flex align-items-center justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google icon" className="mr-2" style={{ width: '20px' }} />
-                        Sign-in with Google
+                      <button type="button" className="form-control btn btn-outline-primary rounded submit px-3 bg-sky-800 d-flex align-items-center justify-content-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google icon" className="mr-2 text-3xl font-bold " style={{ width: '15px' }} />
+                        <p class='text-xs font-normal mt-[9%]'> Sign-in with Google</p>
                       </button>
-                      </div>
-                  </div>
+                    <div>
+              
+                 
                     </div>
                     </div>
                   </form>
