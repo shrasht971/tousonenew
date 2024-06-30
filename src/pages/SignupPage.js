@@ -126,7 +126,7 @@ const SignupPage = ({ }) => {
                     <div class="form-group d-flex ">
                       <button
                         type="submit"
-                        class="form-control btn btn-primary rounded  submit mx-4 px-3"
+                        class="form-control btn btn-primary rounded  submit mx-4 px-3 "
                       >
                         Create account
                       </button>

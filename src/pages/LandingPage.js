@@ -64,7 +64,7 @@ const LandingPage = () => {
       {/* <SignupPage isOpen={showStudentModal} onClose={closeStudentModal} />
       <SignupPage isOpen={showTeacherModal} onClose={closeTeacherModal} /> */}
 
-      <CarouselComponent imageData={items}/>
+      <CarouselComponent imageData={items} />
 
       <section className="p-8">
         <h2 className="text-3xl mb-6">Current Live Sessions</h2>
