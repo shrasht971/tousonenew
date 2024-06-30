@@ -1,59 +1,159 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../pages/styles/bootstrap.min.css";
+import "../pages/styles/style.css";
 
-const SignupPage = () => {
+const SignupPage = ({ }) => {
+   
+      
   return (
-    <div className="bg-gray-100 min-h-screen flex justify-center items-center">
-      <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-md">
-        <h3 className="text-2xl font-bold text-center mb-4">Create Account</h3>
-        <p className="text-sm text-gray-600 text-center mb-4">
-          For Teachers or Students.
-        </p>
+    <div className="">
+    
+     
+      <section class="ftco-section">
+        <div class="container">
+         
+          <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+              <div class="wrap d-md-flex">
+                <div class="img bgimg"></div>
 
-        <form className="px-4 md:px-0">
-          <div className="mb-4">
-            <label htmlFor="firstName" className="block text-gray-700 text-sm md:sm:text-xs font-bold mb-2">
-              First Name
-            </label>
-            <input
-              id="firstName"
-              type="text"
-              placeholder="Bill"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              required
-            />
+                <div class="login-wrap p-4 p-md-5">
+                  <div class="">
+                    <div class="w-100">
+                      <h3 class="mb-2">Create account</h3>
+                    </div>
+                    <div className="text-sm  text-current ">
+                      For Teachers or Students.
+                    </div>
+                    
+                  </div>
+                  <form action="#" class="signin-form">
+                    <div class="flex d-flex mx-2">
+                      <div class="form-group mb-3 mx-2">
+                        <label class="" for="name">
+                          First name
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Bill"
+                          required
+                        />
+                      </div>
+                     
+                      <div class="form-group mb-3 ">
+                        <label class="" for="password">
+                          Last name
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Sander"
+                          required
+                        />
+                      </div>
+                      </div>
+                      <div class='flex'>
+                      <div class="form-group mb-3 mx-2">
+                        <label class="" for="name">
+                          Email
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="bill.sanders@example.com"
+                          required
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label class="" for="password">
+                          Date of birth
+                        </label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+                      </div>
+                      <div class='flex '>
+                      <div class="form-group mb-3 mx-2">
+                        <label class="" for="Password">
+                          Password
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control"
+
+                          required
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label class="" for="Confirm password">
+                        Confirm password
+                        </label>
+                        <input
+                          type="password"
+                          class="form-control"
+                        
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group ">
+                      <div class="custom-control custom-checkbox mb-3">
+                      <div class='d-flex justify-between '>
+                        <input type="checkbox" class="custom-control-input" id="rememberMe" />
+                        <label class="custom-control-label" for="rememberMe">Remember me</label>
+                        <div class="form-group d-md">
+                      <div class="w-90  text-md-right">
+                        <a href="#" class="text-cyan-800">
+                          Forgot Password
+                        </a>
+                      </div>
+                    </div>
+                    </div>
+                      </div>
+                      <div class="custom-control custom-checkbox mb-3">
+                        <input type="checkbox" class="custom-control-input" id="agreeTerms" />
+                        <label class="custom-control-label" for="agreeTerms">I agree to all the Terms and Privacy Policy</label>
+                      </div>
+                      </div>
+                    
+                    
+                    <div class="form-group d-flex ">
+                      <button
+                        type="submit"
+                        class="form-control btn btn-primary rounded  submit mx-4 px-3"
+                      >
+                        Create account
+                      </button>
+                      <button type="button" className="form-control btn btn-outline-primary rounded submit px-3 bg-sky-800 d-flex align-items-center justify-content-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google icon" className="mr-2 text-3xl font-bold " style={{ width: '15px' }} />
+                        <p class='text-xs font-normal mt-[9%]'> Sign-in with Google</p>
+                      </button>
+                    <div>
+              
+                 
+                    </div>
+                    </div>
+                  </form>
+                  <p class="text-center font- normal text-black">
+                    Don't have an account?
+                    <Link to="./login">
+                      <a data-toggle="tab" class="text-cyan-700 " href="#signup">
+                        Login in
+                      </a>
+                    </Link>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-
-          {/* Other form fields */}
-          
-          <div className="mb-6">
-            <button
-              type="submit"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
-            >
-              Create Account
-            </button>
-          </div>
-
-          <p className="text-center text-gray-500 text-xs">
-            Already have an account?{" "}
-            <Link to="./login" className="text-blue-500 hover:text-blue-700">
-              Login
-            </Link>
-          </p>
-        </form>
-
-        <div className="flex justify-center mt-4">
-          <button className="flex items-center bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png"
-              alt="Google icon"
-              className="w-6 h-6 mr-2"
-            />
-            <span>Sign in with Google</span>
-          </button>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
