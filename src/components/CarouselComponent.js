@@ -10,7 +10,7 @@ const CarouselComponent = ({ imageData }) => {
           <img 
             src={item.image} 
             alt={`Slide ${index}`} 
-            className="w-full h-64 sm:h-[50%] md:h-screen object-cover" 
+            className="w-full xl:h-96 sm:h-[50%] md:h-screen  object-cover" 
           />
           <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50">
             <h1 className="text-xl md:text-5xl text-white font-bold">Unlimited Share Market Classes</h1>
