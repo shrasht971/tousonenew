@@ -5,8 +5,8 @@ import React from 'react';
 const Card = ({ image, title, time, tutor }) => {
   return (
     <div className="border rounded-lg shadow-lg overflow-hidden p-4 flex justify-around items-center">
-      <div className="w-full h-48 mb-4">
-        <img src={image} alt={title} className="w-1/2 h-full object-cover rounded-lg" />
+      <div className="w-full sm:h-48 mb-4">
+        <img src={image} alt={title} className="w-1/2 h-full  object-cover rounded-lg" />
       </div>
       <div className="">
         <div className="flex w-36 item-center ">
@@ -14,8 +14,8 @@ const Card = ({ image, title, time, tutor }) => {
            {/* Icon for Live Session */}
           <h3 className="text-xl font-semibold">{title}</h3>
         </div>
-        <p className="text-gray-600">{time}</p>
-        <p className="text-gray-800 mt-2">Tutor: {tutor}</p>
+        <p className="text-gray-600 text-sm">{time}</p>
+        <p className="text-gray-800 mt-2 text-sm">Tutor: {tutor}</p>
       </div>
     </div>
   );
