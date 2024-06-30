@@ -2,8 +2,8 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import tutor1 from '../assets/pic1.png';
-import tutor2 from '../assets/pic1.png';
-import tutor3 from '../assets/pic1.png';
+import tutor2 from '../assets/pic2.png';
+import tutor3 from '../assets/pic3.png';
 import tutor4 from '../assets/pic1.png';
 
 const tutors = [

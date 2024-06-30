@@ -1,9 +1,9 @@
 import React from 'react';
 import { Carousel } from 'antd';
 import videoThumbnail1 from '../assets/Poster.png'; // Placeholder for video thumbnails
-import videoThumbnail2 from '../assets/Poster.png'; // Placeholder for video thumbnails
-import videoThumbnail3 from '../assets/Poster.png'; // Placeholder for video thumbnails
-import videoThumbnail4 from '../assets/Poster.png'; // Placeholder for video thumbnails
+import videoThumbnail2 from '../assets/poster2.webp'; // Placeholder for video thumbnails
+import videoThumbnail3 from '../assets/poster3.jpg'; // Placeholder for video thumbnails
+import videoThumbnail4 from '../assets/poster4.jpg'; // Placeholder for video thumbnails
 
 const videoItems = [
   { image: videoThumbnail1, title: 'Exclusive Investment Strategies', description: 'Learn the secrets from the best in the industry' },
